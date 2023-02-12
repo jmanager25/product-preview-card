@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+main {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}    
+
+.container {
+    display: grid;
+    width: 350px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+.img {
+    width: 350px;
+    height: 250px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.text-content { 
+    width: 296px;
+    padding: 20px;
+}
+
+p:first-child {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color:  hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-family: "Montseraat", sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    margin: 15px 0;
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;   
+    color: hsl(212, 21%, 14%); 
+}
+
+.discription {
+    margin-bottom: 15px;
+    font-family: "Montseraat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color:  hsl(228, 12%, 48%);
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+strong {
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    font-size: 35px;
+}
+
+sup {
+    padding-left: 15px;
+    font-family: "Montseraat", sans-serif;
+    font-size: 14px;
+    color:  hsl(228, 12%, 48%);
+}
+
+button {
+    width: 310px;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+}
+
+button span {
+    padding-left: 5px;
+    font-family: "Montseraat", sans-serif;
+    font-weight: 700;
+}
+/* Media Queries */
+
+@media screen and (min-width: 600px) {
+    
+    .container {
+        grid-template-columns: 1fr 1fr;
+        width: 680px;
+        height: 525px;
+    }
+
+    .text-content {
+        width: 240px;
+        margin: 25px;
+    }
+
+    h1 {
+        margin: 30px 0;
+    }
+
+    .discription {
+        margin-bottom: 30px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    img {
+        visibility: hidden;
+    }
+
+    .img {
+        background-image: url(../images/image-product-desktop.jpg); 
+        background-size: cover;
+        height: 525px;
+    }
+}
+
