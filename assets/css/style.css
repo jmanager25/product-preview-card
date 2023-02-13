@@ -8,6 +8,10 @@
     border: none;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: "Montseraat", sans-serif;
     font-weight: 500;
@@ -19,79 +23,80 @@ main {
     display: grid;
     align-items: center;
     justify-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: hsl(30, 38%, 92%);
 }    
 
 .container {
     background-color: hsl(0, 0%, 100%);
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 /* Image ------------------ */
 
 .img {
-    width: 350px;
+    width: 35rem;
 }
 
 img {
     width: 100%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 1rem 1rem 0 0;
 }
 
 /* Text Content ------------------ */
 
 .text-content { 
-    width: 296px;
-    padding: 20px;
+    width: 29.6rem;
+    padding: 2rem;
 }
 
 p:first-child {
     text-transform: uppercase;
-    letter-spacing: 7px;
+    letter-spacing: 0.7rem;
     color:  hsl(228, 12%, 48%);
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 h1 {
-    margin: 15px 0; 
+    font-size: 2.6rem;
+    margin: 1.5rem 0; 
     font-family: "Fraunces", sans-serif;
     color: hsl(212, 21%, 14%); 
 }
 
 .discription {
-    margin-bottom: 15px;
-    font-size: 14px;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
     color:  hsl(228, 12%, 48%);
-    line-height: 25px;
-    letter-spacing: 1px;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
 }
 
 strong {
     font-family: "Fraunces", sans-serif;
     color: hsl(158, 36%, 37%);
-    font-size: 33px;
+    font-size: 3.3rem;
 }
 
 sup {
-    padding-left: 15px;
-    font-size: 14px;
+    padding-left: 1.5rem;
+    font-size: 1.4rem;
     color:  hsl(228, 12%, 48%);
 }
 
 button {
-    width: 310px;
-    padding: 15px;
-    margin-top: 20px;
+    width: 31rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
     background-color: hsl(158, 36%, 37%);
-    border-radius: 10px;
+    border-radius: 1rem;
     color: hsl(0, 0%, 100%);
 }
 
 button span {
-    padding-left: 5px;
+    padding-left: 0.5rem;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 /* Media Queries ----------------- */
@@ -104,21 +109,21 @@ button span {
     }
 
     .text-content {
-        width: 240px;
-        margin: 30px;
+        width: 24rem;
+        margin: 3rem;
     }
 
     h1 {
-        margin: 30px 0;
+        margin: 3rem 0;
     }
 
     .discription {
-        margin-bottom: 30px;
+        margin-bottom: 3rem;
     }
 
     button {
         width: 100%;
-        margin-top: 30px;
+        margin-top: 3rem;
     }
 
     img {
@@ -128,7 +133,7 @@ button span {
     .img {
         background-image: url(../images/image-product-desktop.jpg); 
         background-size: cover;
-        border-radius: 10px 0px 0 10px;
+        border-radius: 1rem 0px 0 1rem;
     }
 }
 
